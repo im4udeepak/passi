@@ -35,7 +35,7 @@
 <body>
     <main>
         <!-- header -->
-        <header class="header top" id="home">
+        <header class="header can-sticky top" id="home">
             <div class="container">
                 <div class="navigation-warp">
                     <div class="logo">
@@ -83,7 +83,7 @@
             </div>
         </section>
         <!-- section -->
-        <section class="section">
+        <section class="section pb-0">
             <div class="container">
                 <div class="section-header">
                     <h3 class="title">Customized reprints</h3>
@@ -91,24 +91,77 @@
                         connection
                         with target audiences.</p>
                 </div>
-                <div class="service-detail-slider-one">
-                    <!--  -->
-                    <div class="slide-item px-2">
-                        <div class="service-box-two">
-                            <img src="assets/images/service/1.jpg" alt="Customized reprints" class="image-fit image">
-                            <div class="service-actions transform-center text-center">
-                                <a href="assets/images/service/1.jpg"
-                                    class="icon-btn btn btn-primary btn-sm image-popup"><i class="fal fa-image"></i></a>
-                                <button type="button" data-toggle="modal" data-target="#myModal"
-                                    data-src="assets/sample.pdf" data-title="Customized reprints"
-                                    class="icon-btn btn btn-secondary btn-sm modal-btn">
-                                    <i class="fal fa-file-pdf"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  -->
+                <div id="customizedReprints"></div>
+            </div>
+        </section>
+        <!-- section -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title">Customized leave-behind-leaflets (LBLs)</h3>
+                    <p class="text">Combination of scientific accuracy and tailored communication strategies crafted to
+                        suit specific
+                        needs and audiences.</p>
                 </div>
+                <div id="customizedLbls"></div>
+            </div>
+        </section>
+        <!-- section -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title">Customized booklets</h3>
+                    <p class="text">
+                        Careful and skillful creation of content within to provide not just information, but also
+                        meaningful insights.</p>
+                </div>
+                <div id="customizedBooklets"></div>
+            </div>
+        </section>
+        <!-- section -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title">Customized product posters</h3>
+                    <p class="text">Visual narratives that captivate the audie e and enhance the overall perception of
+                        the scientific c ntent or brand.</p>
+                </div>
+                <div id="customizedProductPosters"></div>
+            </div>
+        </section>
+        <!-- section -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title">Infographic LBLs</h3>
+                    <p class="text">Informative and visually engaging graphics presenting complex data and/or concepts
+                        in a clear and concise manner.</p>
+                </div>
+                <div id="infographicLbls"></div>
+            </div>
+        </section>
+        <!-- section -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title">Key opinion leaders (EOLs) endorsements</h3>
+                    <p class="text">
+                        Insightful perspectives across a multitude of disciplines brought to you by the
+                        influential ver&s of KOLs.</p>
+                </div>
+                <div id="kolEndosements"></div>
+            </div>
+        </section>
+        <!-- section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title">Subject matter expertise</h3>
+                    <p class="text">Gain from an unrivaled expertise facilitating new brand horizons, optimizing
+                        pipelines, and igniting success
+                        through new launches tailored to diverse demographics.</p>
+                </div>
+                <div id="subjectMatterExpertise"></div>
             </div>
         </section>
         <!-- news letter -->
@@ -212,31 +265,13 @@
             </div>
         </footer>
     </main>
-    <!-- modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel"></h5>
-                    <button type="button" class="btn btn-primary btn-sm icon-btn close" data-dismiss="modal"
-                        aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body p-0">
-                    <!-- Iframe -->
-                    <iframe id="iframeContent" width="100%" height="100%"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- scripts -->
     <script src="assets/js/vendor/jquery-3.7.1.slim.min.js"></script>
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
     <script src="assets/js/vendor/slick-animation.min.js"></script>
     <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/service-detail.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 
