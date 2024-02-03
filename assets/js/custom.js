@@ -26,7 +26,7 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 5000,
         dots: true,
         arrows: false,
         dotsClass: "slick-dots d-flex container",
@@ -36,7 +36,7 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 5000,
         dots: true,
         arrows: false,
         dotsClass: "slick-dots dark d-flex container",
@@ -46,7 +46,7 @@
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 5000,
         dots: false,
         arrows: true,
         dotsClass: "slick-dots dark d-flex container",
@@ -83,64 +83,7 @@
             }
         ]
     });
-    $('.service-detail-slider-one').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: false,
-        arrows: true,
-        dotsClass: "slick-dots dark d-flex container",
-        responsive: [
-            {
-                breakpoint: 1199,
-                settings: {
-                    slidesToShow: 4,
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 3,
-                    dots: true,
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 2,
-                    dots: true,
-                    arrows: false
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    dots: true,
-                    arrows: false
-                }
-            }
-        ]
-    });
-    // gallery
-    $('.image-popup').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        },
-        zoom: {
-            enabled: true,
-            duration: 300, // duration of the effect, in milliseconds
-            easing: 'ease-in-out', // CSS transition easing function
-            opener: function (openerElement) {
-                return openerElement.is('img') ? openerElement : openerElement.find('img');
-            }
-        }
-    });
-    function openIframeModal(url,title) {
+    function openIframeModal(url, title) {
         // Set the src attribute of the iframe
         $("#iframeContent").attr("src", url);
         $("#modalLabel").html(title);
@@ -155,7 +98,7 @@
         var iframeTitle = $(this).data("title");
 
         // Open the modal with the specified iframe source URL
-        openIframeModal(iframeSrc,iframeTitle);
+        openIframeModal(iframeSrc, iframeTitle);
     });
     $(".close").click(function () {
         $("#myModal").modal("hide");
@@ -197,7 +140,7 @@
         });
     };
     let currentYear = document.getElementById("currentYear");
-    if(currentYear){
+    if (currentYear) {
         currentYear.innerHTML = new Date().getFullYear();
     }
 })(jQuery);
